@@ -2,8 +2,8 @@ import React from 'react'
 import res19 from '../../assets/images/Rectangle 19.svg'
 const About = () => {
   return (
-    <div>
-      <div className="-py-96 px-4 text-center max-w-7xl m-auto bg-white">
+    <div className=''>
+      <div className="-py-96 -mt-[800] text-center max-w-7xl m-auto bg-white">
   <div className="flex justify-center mb-2">
     <div className="w-2 h-10 bg-red-600 rounded-full"></div>
   </div>
@@ -26,7 +26,7 @@ const About = () => {
     <img 
       src={res19}
       alt="Mobile Accessories" 
-      className="w-96 sm:w-[90%] md:w-[80%] lg:w-[60%] xl:w-[50%] object-contain"
+      className="w-96 sm:w-[90%] md:w-[80%] lg:w-[60%] xl:w-[50%] mb-60"
     />
   </div>
 </div>

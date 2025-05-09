@@ -7,6 +7,7 @@ import Blog from '../pages/blog/Blog'
 import About from '../pages/aboutPages/AboutPages'
 import Error from '../pages/error/Error'
 import Search from '../pages/search/Search'
+import Detail from "../pages/detail/Detail"
 const Router = () => {
   return (
     <div>
@@ -34,6 +35,10 @@ const Router = () => {
             {
               path: '/search',
               element: <Search />
+            },
+            {
+              path: '/detail/:id',
+              element: <Detail />
             }
           ]
         },

@@ -6,7 +6,7 @@ import i17 from  "../../assets/images/Rectangle 17.svg"
 const Cards = () => {
   return (
     <div>
-       <div className="min-h-screen bg-white p-6 max-w-7xl m-auto">
+       <div className=" bg-white p-6 max-w-7xl m-auto">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         
         <div className="bg-gray-100 rounded-lg p-4 text-center shadow hover:shadow-md transition">
