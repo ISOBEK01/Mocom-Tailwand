@@ -6,8 +6,13 @@ import Shop from '../pages/shop/Shop'
 import Blog from '../pages/blog/Blog'
 import About from '../pages/aboutPages/AboutPages'
 import Error from '../pages/error/Error'
+import Contact from '../pages/contact/Contact'
 import Search from '../pages/search/Search'
 import Detail from "../pages/detail/Detail"
+import Login from "../pages/login/Login"
+import Auth from "../pages/auth/Auth"
+
+
 const Router = () => {
   return (
     <div>
@@ -18,7 +23,11 @@ const Router = () => {
           children: [
             {
               path: '/',
-              element: <Home />
+              element: ( 
+              <Auth>
+              <Home />
+              </Auth>
+              ) 
             },
             {
               path: '/shop',
@@ -32,6 +41,7 @@ const Router = () => {
               path: '/about',
               element: <About />
             },
+
             {
               path: '/search',
               element: <Search />
@@ -39,13 +49,21 @@ const Router = () => {
             {
               path: '/detail/:id',
               element: <Detail />
-            }
+            },
+            {
+              path: '/contact',
+              element: <Contact />
+            },
           ]
         },
         {
           path: '*',
           element: <Error />
-        }
+        },
+                      {
+              path: '/login',
+              element: <Login />
+            }
       ])}
     </div>
   )
