@@ -55,7 +55,7 @@ Xabar: ${formData.message}
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center p-4">
+    <div className="flex justify-center items-center p-4">
       <form onSubmit={handleSubmit} className="bg-white p-6 rounded-xl shadow-md w-full max-w-md space-y-4">
         <h2 className="text-2xl font-bold text-center text-blue-700">CONTACT                      </h2>
 

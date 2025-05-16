@@ -62,6 +62,7 @@ const Header = () => {
           <NavLink to={'/shop'} onClick={() => setSidebarOpen(false)} className='text-xl hover:text-red-500'>Shop All</NavLink>
           <NavLink to={'/blog'} onClick={() => setSidebarOpen(false)} className='text-xl hover:text-red-500'>Blog</NavLink>
           <NavLink to={'/about'} onClick={() => setSidebarOpen(false)} className='text-xl hover:text-red-500'>About Us</NavLink>
+           <NavLink className='text-xl text-black duration-300 whitespace-nowrap hover:text-red-500 max-lg:text-xl' to={'/contact'}>Contact</NavLink>
           <form className='flex items-center bg-[#EDF2F4] w-full h-10 px-2 rounded-lg'>
             <input required className='bg-transparent border-none outline-none text-blue-900 text-lg indent-2 w-full' type='search' placeholder='Search Product' />
             <Link to={'/search'} className='bg-transparent text-xl'>
